@@ -1,0 +1,31 @@
+<h1>Résultats de la recherche</h1>
+
+<% if @movies.count > 1 %>
+    <table class="table table-striped">
+          <tr>
+          	<th>FIlm</th>
+          	<th>Date de sortie</th>
+            <th>Réalisateur</th>
+          	<th>Affiche</th>
+       	  </tr>
+
+      <% @movies.take(20).each do |movie| %>
+        <tr>
+        	<td> <%= movie.title %> </td>
+          <td> <%= movie.release_date %> </td>
+        	<td> <%= movie.director %> </td>
+        	<td> <% if movie.poster_path %>
+            <img class="affiche" src="http://image.tmdb.org/t/p/w185/<%= movie.poster_path %>" >
+          <% else %>
+          <%= "Pas d'affiche répertoriée" %>
+          <% end %>
+        	</td>
+        </tr>
+        <% end %>
+      </table>
+      <p> <a href="/">Retourner à l'accueil</a> </p>
+<% else %>
+      <%= "Pas de résultats" %>
+      <br><br>
+      <p> <a href="/">Retourner à l'accueil</a> </p>
+<% end %>

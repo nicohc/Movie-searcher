@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  root 'home#index'
-  get   'home/index', link_to:'home#new'
-  post  'home/index', link_to:'home#create'
-  post  '/', to:'home#create'
-
+  root  'movies#home'
+  post  '/', to:'movies#create'
+  post  'movies/search/(:moviename)', to:'movies#search', :as =>'search_result'
+  get  'movies/search', to:'movies#home'
 
 end

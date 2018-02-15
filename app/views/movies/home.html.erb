@@ -1,0 +1,16 @@
+<h1>Le chercheur de films</h1>
+<p>Bonjour, pour chercher un film,
+  <br>veuillez remplir le champ suivant :
+</p>
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <%= form_tag (search_result_path) do %>
+      <%= label_tag 'movie', "Film :" %>
+      <%= text_field_tag 'movie' %>
+    <br><br>
+    <%= submit_tag "Chercher"%>
+    <% end %>
+
+  </div>
+</div>

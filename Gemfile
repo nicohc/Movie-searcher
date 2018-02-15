@@ -16,7 +16,7 @@ gem 'turbolinks',   '5.0.1'
 gem 'jbuilder',     '2.7.0'
 gem 'bootstrap-sass', '3.3.7'
 gem 'dotenv-rails', groups: [:development, :test]
-gem 'themoviedb'
+gem 'themoviedb-api'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
