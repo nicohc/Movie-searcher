@@ -1,25 +1,6 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
 # Movie-searcher
+* Utilisation de l'API themoviedb : https://github.com/18Months/themoviedb-api
+Cette API permet d'accéder plus facilement à la donnée du réalisateur.
+
+
+Le site comportant ce code est visible ici : https://nicobotmovie.herokuapp.com
